@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ApexAlarm</string>
+    <string name="alarm_setting_default_notice">Set alarm</string>
+    <string name="weapon_shotgun">Shotgun</string>
+    <string name="weapon_pistol">Pistol</string>
+    <string name="weapon_sniper_rifle">Sniper Rifle</string>
+    <string name="weapon_marksman">Marksman</string>
+    <string name="weapon_lmg">LMG</string>
+    <string name="weapon_smg">SMG</string>
+    <string name="weapon_ar">AR</string>
+    <string name="weapon_shotgun_peaceKeeper">Peacekeeper</string>
+    <string name="weapon_shotgun_mozambique">Mozambique</string>
+    <string name="weapon_shotgun_mastiff">Mastiff</string>
+    <string name="weapon_shotgun_eva_8_auto">EVA-8 Auto</string>
+    <string name="weapon_pistol_re_45_auto">Re-45 Auto</string>
+    <string name="weapon_pistol_wingman">Wingman</string>
+    <string name="weapon_sniper_rifle_charge_rifle">Charge Rifle</string>
+    <string name="weapon_sniper_rifle_longbow">Longbow</string>
+    <string name="weapon_sniper_rifle_kraber">Kraber</string>
+    <string name="weapon_sniper_rifle_sentinel">Sentinel</string>
+    <string name="weapon_marksman_g7">G7 Scout</string>
+    <string name="weapon_marksman_triple_take">Triple Take</string>
+    <string name="weapon_marksman_bocek_compound_bow">Bocek</string>
+    <string name="weapon_lmg_devotion">Devotion</string>
+    <string name="weapon_lmg_l_star">L-Star</string>
+    <string name="weapon_lmg_spitfire">Spitfire</string>
+    <string name="weapon_lmg_rampage">Rampage</string>
+    <string name="weapon_smg_alternator">Alternator</string>
+    <string name="weapon_smg_prowler">Prowler</string>
+    <string name="weapon_smg_volt">Volt</string>
+    <string name="weapon_ar_havoc">Havoc</string>
+    <string name="weapon_ar_flat_line">Flat Line</string>
+    <string name="weapon_ar_hemlok">Hemlok</string>
+    <string name="weapon_ar_r_301_carbine">R-301 Carbine</string>
+    <string name="setting_alarm_diff_time_text">The next alarm will sound in approximately %d hours %d minutes</string>
+    <string name="setting_alarm_setting_completed">Alarm is set</string>
+    <string name="weapon_select_correct">Correct！！</string>
+    <string name="weapon_select_incorrect">Incorrect！！</string>
+    <string name="notification_text">It\'s time!</string>
+    <string name="notification_channel_description">Set time</string>
+    <string name="notification_channel_name">Alarm Notification</string>
+</resources>

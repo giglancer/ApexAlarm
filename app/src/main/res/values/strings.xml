@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Apex目覚まし時計</string>
+    <string name="alarm_setting_default_notice">アラームを設定してください</string>
+
+    <!-- weaponList   -->
+    <!-- weaponType -->
+    <string name="weapon_shotgun">ショットガン</string>
+    <string name="weapon_pistol">ピストル</string>
+    <string name="weapon_sniper_rifle">スナイパーライフル</string>
+    <string name="weapon_marksman">マークスマン</string>
+    <string name="weapon_lmg">ライトマシンガン</string>
+    <string name="weapon_smg">サブマシンガン</string>
+    <string name="weapon_ar">アサルトライルフル</string>
+
+
+    <!-- shotGun   -->
+    <string name="weapon_shotgun_peaceKeeper">ピースキーパー</string>
+    <string name="weapon_shotgun_mozambique">モザンビーク</string>
+    <string name="weapon_shotgun_mastiff">マスティフ</string>
+    <string name="weapon_shotgun_eva_8_auto">EVA-8オート</string>
+    <!-- pistol   -->
+    <string name="weapon_pistol_re_45_auto">RE-45オート</string>
+    <string name="weapon_pistol_p2020" translatable="false">P2020</string>
+    <string name="weapon_pistol_wingman">ウィングマン</string>
+    <!-- sniperRifle   -->
+    <string name="weapon_sniper_rifle_charge_rifle">チャージライフル</string>
+    <string name="weapon_sniper_rifle_longbow">ロングボウ</string>
+    <string name="weapon_sniper_rifle_kraber">クレーバー</string>
+    <string name="weapon_sniper_rifle_sentinel">センチネル</string>
+    <!-- marksman -->
+    <string name="weapon_marksman_g7">G7スカウト</string>
+    <string name="weapon_marksman_triple_take">トリプルテイク</string>
+    <string name="weapon_marksman_30" translatable="false">30–30</string>
+    <string name="weapon_marksman_bocek_compound_bow">ボセック</string>
+    <!-- LMG -->
+    <string name="weapon_lmg_devotion">ディヴォーション</string>
+    <string name="weapon_lmg_l_star">L-スター</string>
+    <string name="weapon_lmg_spitfire">スピットファイア</string>
+    <string name="weapon_lmg_rampage">ランページ</string>
+    <!-- SMG -->
+    <string name="weapon_smg_alternator">オルタネーター</string>
+    <string name="weapon_smg_prowler">プラウラー</string>
+    <string name="weapon_smg_r_99" translatable="false">R-99</string>
+    <string name="weapon_smg_volt">ボルト</string>
+    <string name="weapon_smg_car" translatable="false">CAR</string>
+    <!-- AR -->
+    <string name="weapon_ar_havoc">ハボック</string>
+    <string name="weapon_ar_flat_line">フラットライン</string>
+    <string name="weapon_ar_hemlok">ヘムロック</string>
+    <string name="weapon_ar_r_301_carbine">R-301カービン</string>
+
+    <!-- common -->
+    <string name="setting_alarm_content_description" translatable="false">setting Alarm</string>
+    <string name="setting_alarm_diff_time_text">次のアラームはほぼ%d時間%d分後に鳴ります</string>
+    <string name="setting_alarm_time_text" translatable="false">%02d:%02d</string>
+    <string name="setting_alarm_setting_completed">アラームを設定しました</string>
+    <string name="weapon_select_correct">正解！！</string>
+    <string name="weapon_select_incorrect">不正解！！</string>
+
+    <!-- Notification -->
+    <string name="notification_channel_id" translatable="false">playing alarm</string>
+    <string name="notification_text">時間になりました！</string>
+    <string name="notification_channel_description">設定した時間</string>
+    <string name="notification_channel_name">アラームお知らせ</string>
+
+
+</resources>

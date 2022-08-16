@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewModel"
+            type="com.apexalramapp.viewModel.AlarmSettingFragmentViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.AlarmSettingFragment">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/alarm_setting_default_notice"
+            android:text="@string/alarm_setting_default_notice"
+            android:visibility="@{viewModel.alarmTimeText != null ? View.GONE : View.VISIBLE}"
+            android:layout_marginStart="@dimen/alarm_setting_margin"
+            android:layout_marginEnd="@dimen/alarm_setting_margin"
+            app:layout_constraintBottom_toTopOf="@+id/alarmOnOff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/alarmOnOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.mutableAlarmTimeText}"
+            android:checked="@{viewModel.switchCompatChecked}"
+            android:visibility="@{viewModel.alarmTimeText != null ? View.VISIBLE : View.GONE}"
+            android:textColor="@{viewModel.switchCompatChecked ? @color/black : @color/grey}"
+            android:onClick="@{() -> viewModel.switchClickSwitchToggle(context)}"
+            android:textSize="@dimen/alarm_setting_alarm_text"
+            android:layout_marginStart="@dimen/alarm_setting_margin"
+            android:layout_marginEnd="@dimen/alarm_setting_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="14:00"/>
+
+        <TextView
+            android:id="@+id/timeLeftText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.diffAlarmTimeText.toString()}"
+            android:visibility="@{viewModel.switchCompatChecked ? View.VISIBLE : View.GONE}"
+            android:textSize="@dimen/alarm_setting_time_left"
+            android:layout_marginStart="@dimen/alarm_setting_margin"
+            android:layout_marginEnd="@dimen/alarm_setting_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alarmOnOff"
+            tools:text="@string/setting_alarm_diff_time_text"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="@dimen/alarm_setting_floating_btn"
+            android:src="@drawable/ic_baseline_add_24"
+            app:tint="@color/white"
+            android:contentDescription="@string/setting_alarm_content_description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

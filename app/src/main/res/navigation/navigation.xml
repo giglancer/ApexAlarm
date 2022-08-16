@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/alarmSettingFragment">
+
+    <fragment
+        android:id="@+id/alarmSettingFragment"
+        android:name="com.apexalramapp.ui.AlarmSettingFragment"
+        android:label="fragment_alaram_setting"
+        tools:layout="@layout/fragment_alarm_setting" >
+        <action
+            android:id="@+id/action_alarmSettingFragment_to_weaponTypeSelectionFragment"
+            app:destination="@id/weaponTypeSelectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/weaponDetailSelectionFragment"
+        android:name="com.apexalramapp.ui.WeaponDetailSelectionFragment"
+        android:label="fragment_weapon_detail_selection"
+        tools:layout="@layout/fragment_weapon_detail_selection" >
+        <action
+            android:id="@+id/action_weaponDetailSelectionFragment_to_alarmSettingFragment"
+            app:destination="@id/alarmSettingFragment"/>
+        <argument
+            android:name="weaponType"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/weaponTypeSelectionFragment"
+        android:name="com.apexalramapp.ui.WeaponTypeSelectionFragment"
+        android:label="fragment_weapon_type_selection"
+        tools:layout="@layout/fragment_weapon_type_selection" >
+        <action
+            android:id="@+id/action_weaponTypeSelectionFragment_to_weaponDetailSelectionFragment"
+            app:destination="@id/weaponDetailSelectionFragment"
+            app:popUpTo="@id/weaponTypeSelectionFragment" />
+    </fragment>
+</navigation>
